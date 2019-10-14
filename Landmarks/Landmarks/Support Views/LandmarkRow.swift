@@ -21,6 +21,8 @@ struct LandmarkRow: View {
             
             Text(landmark.name)
             
+            Spacer()
+            
         }
     }
 }
@@ -30,6 +32,7 @@ struct LandmarkRow_Previews: PreviewProvider {
         Group {
             LandmarkRow(landmark: landmarkData[0])
             LandmarkRow(landmark: landmarkData[1])
+            LandmarkRow(landmark: landmarkData[2])
         }
             .previewLayout(.fixed(width: 300, height: 70))
     }
